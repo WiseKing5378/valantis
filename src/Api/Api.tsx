@@ -34,7 +34,7 @@ function api(action: string, params: object) {
       api(action, params)
     );
   }
-  return fetch("http://api.valantis.store:40000", fetchOptions)
+  return fetch("https://api.valantis.store:41000", fetchOptions)
     .then((resp) => resp.json())
     .then((res) => res.result)
     .catch(onError);
